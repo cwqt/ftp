@@ -1,0 +1,27 @@
+{
+  "name": "ftp",
+  "version": "1.0.0",
+  "description": "ftp",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "harp compile skeleton/ _site/",
+    "start": "harp server skeleton/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/cxss/site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/cxss/site/issues"
+  },
+  "homepage": "https://gitlab.com/cxss/site#readme",
+  "dependencies": {
+    "harp": "^0.31.0",
+    "replace": "^1.1.1",
+    "timeago.js": "^4.0.1",
+    "yaml": "^1.7.2"
+  }
+}

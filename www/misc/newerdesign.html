@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+.element { display: inline; }
+p {
+   white-space: pre;
+   font-family: "Inconsolata"
+}
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+</style>
+</head>
+<body>
+<p class='element'></p>
+<p class="posts"></p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://rawgit.com/mattboldt/typed.js/master/js/typed.js"></script>
+
+<script>
+$(function(){ $(".element").typed({
+		strings: ["-- Ohayo, Welcome to my dumb site",
+    "while c &lt; 5 do\n  for i,v in ipairs (blog) do\n    if v.age &lt; 10 and not v.draft then\n      c = c + 1 -- Only 5 shitposts please\n      print('&lt;a class='' href='/' .. v.url .. ''&gt;' .. v.title .. '&lt;/a&gt;')\n    end\n  end\nend &#8617; \n"],
+    typeSpeed: 20,
+    backSpeed: 1,
+    cursorChar: "█",
+    callback: function(){$('<p>some blog \nposts</p>').appendTo('.element');},});
+});
+</script>
+</body>
+</html>

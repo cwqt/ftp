@@ -1,0 +1,80 @@
+center
+	img#icon.round(src="/")
+
+	h1 ftp.cass.si
+	p#time hosting 
+		b FILE_COUNT 
+		| files
+
+	.wrapper
+		.auth
+			input#token(placeholder="email:token")
+
+		.upload_button.hidden
+			input#fileUploaderButton(multiple="" type="file" onchange="onFileAdded(event)")
+			br
+			input#useCompression(type="checkbox" checked name="useCompression")
+			label(for="useCompression") &nbsp;Use compression?
+	
+			br
+			.setInfo
+				input#newPassword(placeholder="Change password")
+				span
+				input#newToken(placeholder="Set GitLab token")
+
+		.files.hidden
+			//- .file-item
+			//- 	p somelongtitle
+			//- 	span 12.5kb
+				//- a(href="ftp.cass.si/somelongtitle") https://ftp.cass.si/title.png
+				span Uploading...
+
+		.spinner.hidden
+			.bounce1
+			.bounce2
+			.bounce3
+
+		p#debug_message
+
+	.footer
+		.date-and-git
+			span UPDATED_AT
+			a(href="https://gitlab.com/cxss/site/commit/GIT_SHA") GIT_SHA
+
+		hr
+
+		.links
+			a(href="/list") file list
+			span /
+			a(href="https://gitlab.com/cxss/site/tree/ftp") source
+			span /
+			a(href="https://cass.si/contact") contact
+			span /
+			a(href="https://cass.si/posts/jam-stack-ftp-electric-boogaloo") about
+
+
+script(src="/js/upload.js" defer)
+script.
+	var icons = [
+		"https://ftp.cass.si/=YDM4gTO5k.jpeg",
+		"https://ftp.cass.si/==QN0YjN4k.jpeg",
+		"https://ftp.cass.si/==QNxYDMwA.png",
+		"https://ftp.cass.si/5YTM4kTO5k.jpeg",
+		"https://ftp.cass.si/1ADM5kTO5k.jpeg",
+		"https://ftp.cass.si/=kjM4kTO5k.jpeg",
+		"https://ftp.cass.si/1MDOxADMwA.jpeg",
+		"https://ftp.cass.si/4cDM4kTO5k.png",
+		"https://ftp.cass.si/0MDMzADMwA.png",
+		"https://ftp.cass.si/0QzNzADMwA.jpeg",
+		"https://ftp.cass.si/==gN5IDM5k.jpeg",
+		"https://ftp.cass.si/=kzM2kTO5k.png"
+		//- "https://ftp.cass.si/==gN5EjM5k.jpeg",
+		//- "https://ftp.cass.si/5ITO5kTO5k.jpeg",
+		//- "https://ftp.cass.si/==wN0cTMwA.png",
+	];
+	var icon = icons[Math.floor(Math.random()*icons.length)];
+	console.log(icon)
+	document.getElementById("icon").src=icon;
+
+
+

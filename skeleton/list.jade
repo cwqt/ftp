@@ -1,0 +1,26 @@
+.list
+  h1 list
+  .file-manage-auth
+    p Times relative to 
+      b COMPILE_DATE_TIME
+
+    .spinner.hidden
+      .bounce1
+      .bounce2
+      .bounce3
+    .icon-button#fingerprint
+      img(src="/img/auth.png")
+    input#token.hidden(placeholder="email:token")
+    .icon-button#send-delete-all-req.hidden.disabled
+      img(src="/img/delete-all.png")
+
+  hr
+
+  | INSERT_LIST_HERE
+
+br
+br
+br
+br
+
+script(src="/js/manage.js" defer)

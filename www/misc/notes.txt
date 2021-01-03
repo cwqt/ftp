@@ -1,0 +1,9 @@
+  <meta name="description" content="{{site.description}}">
+  <meta name="author" content="{{site.author}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{site.title}}">
+  <meta property="og:image" content="{{site.baseurl}}{{site.data.directories.ftp}}/www/meta-image.jpg">
+  <meta property="og:url" content="http://twentytwoo.github.io">
+  <meta property="og:description" content="{{site.description}}">
+
+  http://materializecss.com/color.html

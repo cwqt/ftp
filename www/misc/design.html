@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<style type="text/css">
+* { box-sizing: border-box; }
+html, body {
+	height: 100%;
+}
+body {
+	/*background-image: url(https://u.nya.is/uhfajf.jpg);*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	background-position: bottom;
+	background-image: url(https://u.nya.is/icwdqz.jpg);
+	background-size: cover;
+
+}
+.main {
+	width: 75vw;
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.window {
+	width: 70%;
+	min-width: 30%;
+	height: auto;
+	margin: 15px;
+	word-break: break-all;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	background-color: #fff;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+.sub-window {
+	margin: 15px;
+	flex-grow: 1;
+}
+.sub-window h4 {
+	margin-bottom: 10px;
+	color: #000 ;
+}
+h1,h2,h3,h4,h5 {
+	color: #000
+}
+.base {
+	margin: 15px;
+	margin-top: auto;
+}
+.top {
+	background-color: #151313;
+	border-bottom: thick solid #512DA8;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+}
+.top h4 {
+		color: #fff !important;
+
+}
+
+i {
+	display: inline-block;
+	color: #fff;
+	margin-left: auto;
+	transition: 0.2s;
+}
+i:hover {
+	cursor: pointer;
+}
+
+hr {
+	background-color: #151313;
+	margin: 0 !important;
+}
+p {
+	font-family: "Roboto" !important;
+	font-weight: 400;
+	font-size: 14px;
+}
+button {
+	background-color: #151313 !important;
+	border-bottom: none;
+	color: #fff;
+	padding: 10px;
+	transition: 0.2s;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-bottom: thick solid transparent;
+	padding-bottom: 5px !important;
+	margin-right: 5px;
+}
+button:hover {
+	border-bottom: 3px solid #512DA8;
+}
+.side-image {
+	height: 230px;
+	width: 200px;
+	float: right;
+	overflow: hidden;
+	margin-left: 30px;
+}
+image {
+	margin: 15px;
+}
+pre {
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+}
+</style>
+</head>
+
+<body>
+<div class="main">
+	<div class="window">
+	<div class="top">
+	<h4>ssh ~ 127.0.0.1</h4>
+	<i class="material-icons">close</i>
+	</div>
+		<div class="sub-window">
+			<h4>may@angelcakeDebL</h4>
+			<p>Lorum ipsum sed ad bona praeterita redeamus. Tamen a proposito, inquam, aberramus. Sed tamen est aliquid, quod nobis non liceat, liceat illis. Quod idem cum vestri faciant, non satis magnam tribuunt inventoribus gratiam. Iam contemni non poteris. Duarum enim vitarum nobis erunt instituta capienda. </p>
+		</div>
+		<div class="base">
+			<button>Clicky</button>
+			<button>Buttons</button>
+		<hr><br>
+			<h5>xvii</h5>
+		</div>
+	</div>
+</div>
+
+
+<div class="window">
+	<div class="top">
+	<h4>image</h4>
+	<i class="material-icons" onclick="dismiss()" id="dx">close</i>
+	</div>
+<img src="https://u.nya.is/jpzqjc.jpg">
+	</div>
+
+<div class="window">
+	<div class="top">
+	<h4>terminal</h4>
+	<i class="material-icons">close</i>
+	</div>
+	<div class="sub-window" markdown="1">
+
+<pre>
+print( type(love) )
+if false then
+  baby:hurt(me)
+end
+</pre>
+
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" defer>
+ $(function() { $( ".window" ).draggable() });
+function dismiss(){
+      document.getElementById('dx').parentNode.style.display='none';
+};
+</script>
+</body>
+</html>
