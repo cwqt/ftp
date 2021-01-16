@@ -1,6 +1,6 @@
 //CORS policy means have to proxy request through this service
 const CORS_URL 		= 'https://cors-anywhere.herokuapp.com/'
-const PROJECT_ID 	= "13261952"
+const PROJECT_ID 	= "23430748"
 
 //create GoTrue Netlify identify auth object
 var auth = new GoTrue({
