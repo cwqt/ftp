@@ -97,7 +97,7 @@ async function uploadFilesToRepository(files) {
     dataType: "json",
     contentType: 'application/json; charset=UTF-8',
     data: JSON.stringify({
-	  	branch: "ftp",
+	  	branch: "master",
 	  	commit_message: `FTP :: Uploading ${files.length} file(s)`,
 	  	actions: actions    	
     }),
