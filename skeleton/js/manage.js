@@ -14,7 +14,7 @@ async function sendGitLabDeleteReq(filenames) {
     dataType: "json",
     contentType: 'application/json; charset=UTF-8',
     data: JSON.stringify({
-      branch: "ftp",
+      branch: "master",
       commit_message: `FTP :: Removing ${filenames.length} file(s)`,
       actions: actions      
     }),
