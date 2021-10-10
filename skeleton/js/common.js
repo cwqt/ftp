@@ -1,5 +1,5 @@
 //CORS policy means have to proxy request through this service
-const CORS_URL 		= 'http://cors.cass.si/'
+const CORS_URL 		= 'https://vercel-cors-proxy-cxss.vercel.app/?url='
 const PROJECT_ID 	= "23430748"
 
 //create GoTrue Netlify identify auth object
